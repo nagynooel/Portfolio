@@ -13,13 +13,19 @@
 
         <link href="styles.css" rel="stylesheet">
         <link href="about.css" rel="stylesheet">
-
+        
         <title>Home - Noel Nagy</title>
         <link rel="icon" type="image/x-icon" href="/imgs/favicon.ico">
     </head>
-
+    
     <!--Id to body to override bootstrap properties-->
     <body id="body">
+        
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
         <nav id="top-nav">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
@@ -122,7 +128,7 @@
                     </div>
                     
                     <div class="col-lg-6 col-md-12 my-auto">
-                    
+                        
                         <div class="pair">
                             <p>Python:</p>
                             <div class="progress">
@@ -150,7 +156,7 @@
                                 <div class="progress-bar-even" role="progressbar" aria-label="C" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
-                    
+                        
                     </div>
                 </div>
                 
@@ -162,7 +168,7 @@
         <!--Office applications-->
         <section>
             <div class="container">
-            
+                
                 <h3 class="section_title">Office Applications</h3>
                 <p class="section_subtitle">Skill group</p>
                 <hr />
@@ -173,13 +179,13 @@
                 </div>
                 
                 <div class="section_content row">
-                
+                    
                     <div class="col-lg-6 col-md-12 my-auto resp_show">
                         <img src="imgs/about/word.svg" alt="Text editing" title="Text editing">
                     </div>
                     
                     <div class="col-lg-6 col-md-12 my-auto">
-                    
+                        
                         <div class="pair">
                             <p>MS Excel:</p>
                             <div class="progress">
@@ -296,6 +302,7 @@
         </footer>
 
         <script src="navbar.js"></script>
+        <script src="back-to-top.js"></script>
     </body>
     
-</html>
+    </html>

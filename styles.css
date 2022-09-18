@@ -26,6 +26,16 @@ body {
     margin: 0;
 }
 
+/*Back to top btn*/
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: #060606;
+    color: #fff;
+}
+
 /*Header*/
 header {
     height: 80vh;
