@@ -75,3 +75,36 @@ section .section_text {
     background-color: #4C4EF9;
     color: #fff;
 }
+
+/*Responsive*/
+.resp_show {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .resp_show {
+        display: block;
+    }
+    
+    .resp_hide {
+        display: none;
+    }
+    
+    section img {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section p, section a {
+        font-size: 0.8em;
+    }
+    
+    section h3 {
+        font-size: 1.2em;
+    }
+    
+    .contact_btn {
+        font-size: 1em;
+    }
+}
