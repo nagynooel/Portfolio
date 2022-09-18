@@ -43,6 +43,10 @@ header .socials i{
     margin: 0 10px;
 }
 
+header .socials i:hover {
+    color: #060606;
+}
+
 @media only screen and (max-width: 750px) {
     
     h1 {
