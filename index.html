@@ -19,7 +19,7 @@
 
     <!--Id to body to override bootstrap properties-->
     <body id="body">
-        <nav>
+        <nav id="top-nav">
             <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link active" aria-current="page" href="index.html">Home</a>
@@ -35,8 +35,38 @@
                 </li>
             </ul>
         </nav>
-
+        
         <header>
+            <!--"Sandwich" bar to open responsive menu-->
+            <div id="resp-nav-icon" class="menu_icon_cont" onclick="toggle_navbar(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            
+            <nav id="resp-nav">
+                <!--"Sandwich" bar to close responsive menu-->
+                <div id="resp-nav-icon" class="menu_icon_cont menu_icon_cont_inside open " onclick="toggle_navbar(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="credits.html">Credits</a>
+                    </li>
+                </ul>
+            </nav>
+            
             <div class="center">
                 <h1>Noel Nagy</h1>
                 <p class="sub_title">System Administrator Student</p>
@@ -47,11 +77,12 @@
                 </div>
             </div>
         </header>
-
+        
         <footer>
             <p>Copyright &copy; 2022 Noel Nagy | All rights reserved</p>
         </footer>
 
+        <script src="navbar.js"></script>
     </body>
-
-</html>
+    
+    </html>

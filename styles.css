@@ -6,7 +6,7 @@
 }
 
 h1 {
-    font-size: 3.5em;
+    font-size: 5em;
 }
 
 h1, h3 {
@@ -31,11 +31,10 @@ header {
 
 header .center {
     text-align: center;
-    width: 40vw;
+    width: 100%;
     position: relative;
     top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
 }
 
 header .socials i{
@@ -44,29 +43,137 @@ header .socials i{
     margin: 0 10px;
 }
 
-/*Nav*/
-nav {
+@media only screen and (max-width: 750px) {
+    
+    h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    header .center {
+        width: 90%;
+    }
+}
+
+
+/*Top Nav*/
+#top-nav {
+    display: block;
     background-color: #060606;
     height: 10vh;
 }
 
-nav ul {
+#top-nav ul {
     position: relative;
     top: 50%;
     transform: translate(0, -50%);
 }
 
-#body nav ul li a.active{
+#body .nav-item .nav-link.active{
     color: #fff;
 }
 
-#body nav ul li a{
+#body .nav-item .nav-link{
     color: grey;
 }
 
-#body nav ul li:hover a{
+#body .nav-item .nav-link:hover{
     background: #232426;
     color: #fff;
+}
+
+/*Responsive nav*/
+.menu_icon_cont {
+    display: none;
+    cursor: pointer;
+    width: 35px;
+    height: 39px;
+    margin: 10px 20px;
+}
+
+.menu_icon_cont_inside {
+    float: right;
+}
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 10px;
+}
+
+.open .bar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.open .bar2 {
+    transform: translate(0, 0) rotate(45deg);
+}
+
+.open .bar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+#resp-nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100vh;
+    background-color: #060606;
+    z-index: 998;
+    transition: width 0.2s linear;
+}
+
+#resp-nav ul, #resp-nav #resp-nav-icon {
+    display: none;
+}
+
+#resp-nav.open {
+    display: block;
+    width: 100%;
+}
+
+#resp-nav.open ul, #resp-nav.open #resp-nav-icon {
+    display: block;
+}
+
+#resp-nav ul {
+    list-style-type: none;
+    margin-top: 20px;
+}
+
+#resp-nav ul li a{
+    padding: 10px;
+    width: fit-content;
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 500px) {
+    #top-nav {
+        display: none;
+    }
+    
+    .menu_icon_cont {
+        display: inline-block;
+    }
+    
+    header {
+        height: 90vh;
+    }
+    
+    header .center {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    
+    footer p {
+        font-size: 0.8em;
+    }
 }
 
 /*Footer*/
