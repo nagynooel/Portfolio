@@ -1,0 +1,77 @@
+/*
+Package: portfolio
+File: stylesheet for about.html
+Author: Noel Nagy
+Website: https://github.com/nagynooel
+*/
+
+/*Section*/
+section {
+    padding: 50px 0;
+}
+
+section .section_title, section .section_subtitle {
+    text-align: center;
+}
+
+section .section_title::before,  section .section_title::after{
+    content: " -- ";
+}
+
+section img {
+    width: 100%;
+}
+
+section .section_content p {
+    text-align: justify;
+    margin-bottom: 10px;
+    line-height: 2em;
+}
+
+section i {
+    color: #060606;
+    font-size: 1.2em;
+    padding-right: 5px;
+}
+
+section .section_text {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.section_dark {
+    background-color: #F0F0F0;
+}
+
+/*Skills*/
+
+.progress {
+    background-color: #F0F0F0;
+}
+
+.section_dark .progress{
+    background-color: #fff;
+}
+
+.progress-bar {
+    background-color: #190E90;
+}
+
+.progress-bar-even {
+    background-color: #4C4EF9;
+}
+
+.pair {
+    padding: 20px 0 0 0;
+}
+
+/*Contact*/
+.contact_btn {
+    background-color: #190E90;
+    color: #fff;
+}
+
+#body .contact_btn:hover {
+    background-color: #4C4EF9;
+    color: #fff;
+}
