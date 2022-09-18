@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+/*Global*/
+* {
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h1, h3 {
+    font-weight: 700;
+}
+
+body {
+    background-color: #fff;
+    padding: 0;
+    margin: 0;
+}
+
+/*Header*/
+header {
+    height: 80vh;
+    background-image: url("imgs/header_bg_blur.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+header .center {
+    text-align: center;
+    width: 40vw;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+header .socials i{
+    color: #fff;
+    font-size: 2em;
+    margin: 0 10px;
+}
+
+/*Nav*/
+nav {
+    background-color: #060606;
+    height: 10vh;
+}
+
+nav ul {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
+
+#body nav ul li a.active{
+    color: #fff;
+}
+
+#body nav ul li a{
+    color: grey;
+}
+
+#body nav ul li:hover a{
+    background: #232426;
+    color: #fff;
+}
+
+/*Footer*/
+footer {
+    background-color: #060606;
+    height: 10vh;
+    text-align: center;
+}
+
+footer p {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
