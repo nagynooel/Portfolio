@@ -1,0 +1,19 @@
+/*
+Package: portfolio
+File: stylesheet for index.html
+Author: Noel Nagy
+Website: https://github.com/nagynooel
+*/
+
+/*Footer*/
+footer {
+    background-color: #060606;
+    height: 10vh;
+    text-align: center;
+}
+
+footer p {
+    position: relative;
+    top: 50%;
+    transform: translate(0, -50%);
+}
