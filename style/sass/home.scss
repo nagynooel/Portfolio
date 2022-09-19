@@ -5,15 +5,17 @@ Author: Noel Nagy
 Website: https://github.com/nagynooel
 */
 
+@import "_variables.scss";
+
 /*Footer*/
 footer {
-    background-color: #060606;
+    background-color: $black;
     height: 10vh;
     text-align: center;
-}
-
-footer p {
-    position: relative;
-    top: 50%;
-    transform: translate(0, -50%);
+    
+    p {
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
 }

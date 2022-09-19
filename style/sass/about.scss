@@ -1,0 +1,112 @@
+/*
+Package: portfolio
+File: stylesheet for about.html
+Author: Noel Nagy
+Website: https://github.com/nagynooel
+*/
+
+@import "_variables.scss";
+
+/*Section*/
+section {
+    padding: 50px 0;
+    
+    .section_title, .section_subtitle {
+        text-align: center;
+        
+        ::before,  ::after{
+            content: " -- ";
+        }
+    }
+    
+    img {
+        width: 100%;
+    }
+    
+    .section_content p {
+        text-align: justify;
+        margin-bottom: $padding;
+        line-height: $line_height_large;
+    }
+    
+    i {
+        color: #060606;
+        font-size: 1.2em;
+        padding-right: 5px;
+    }
+    
+    .section_text {
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+.section_dark {
+    background-color: $light;
+}
+
+/*Skills*/
+
+.progress {
+    background-color: $light;
+}
+
+.section_dark .progress{
+    background-color: $light;
+}
+
+.progress-bar {
+    background-color: $purple;
+}
+
+.progress-bar-even {
+    background-color: $l_purple;
+}
+
+.pair {
+    padding: $padding 0 0 0;
+}
+
+/*Contact*/
+#body .contact_btn {
+    background-color: $purple;
+    color: $white;
+    
+    :hover {
+        background-color: $l_purple;
+        color: $white;
+    }
+}
+
+/*Responsive*/
+.resp_show {
+    display: none;
+}
+
+@media only screen and (max-width: 991px) {
+    .resp_show {
+        display: block;
+    }
+    
+    .resp_hide {
+        display: none;
+    }
+    
+    section img {
+        height: 50%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    section p, section a {
+        font-size: $p_resp;
+    }
+    
+    section h3 {
+        font-size: $h3_resp;
+    }
+    
+    .contact_btn {
+        font-size: 1em;
+    }
+}

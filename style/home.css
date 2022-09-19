@@ -1,0 +1,18 @@
+/*
+Package: portfolio
+File: stylesheet for index.html
+Author: Noel Nagy
+Website: https://github.com/nagynooel
+*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+/*Footer*/
+footer {
+  background-color: #060606;
+  height: 10vh;
+  text-align: center;
+}
+footer p {
+  position: relative;
+  top: 50%;
+  transform: translate(0, -50%);
+}/*# sourceMappingURL=home.css.map */

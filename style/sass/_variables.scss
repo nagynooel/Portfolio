@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap');
+
+$global_font: 'Merriweather', serif;
+
+//Font sizes
+$h1_def: 5em;
+$h1_resp: 3.5em;
+$h3_resp: 1.2em;
+$p_resp: 0.8em;
+$line_height_large: 2em;
+
+//Colors
+$black: #060606;
+$white: #fff;
+$purple: #190E90;
+$l_purple: #4C4EF9;
+$light: #F0F0F0;
+$footer: #212529;
+$footer_hover: #3a3a3a;
+
+//Paddings
+$padding: 10px;
+$padding_small: 5px;
+$padding_large: 30px;

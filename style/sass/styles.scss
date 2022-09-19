@@ -1,0 +1,237 @@
+/*
+Package: portfolio
+File: global stylesheet
+Author: Noel Nagy
+Website: https://github.com/nagynooel
+*/
+
+@import "_variables.scss";
+
+/*Global*/
+* {
+    font-family: $global_font;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h1, h3 {
+    font-weight: 700;
+}
+
+body {
+    background-color: $white;
+    padding: 0;
+    margin: 0;
+}
+
+/*Back to top btn*/
+#btn-back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    background-color: $black;
+    color: $white;
+    display: none;
+}
+
+/*Header*/
+header {
+    height: 80vh;
+    background-image: url("../img/header_bg_blur.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    
+    .center {
+        text-align: center;
+        width: 100%;
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+    
+    .socials i{
+        color: #fff;
+        font-size: 2em;
+        margin: 0 $padding;
+        
+        :hover {
+            color: $black;
+        }
+    }
+}
+
+
+
+@media only screen and (max-width: 750px) {
+    h1 {
+        font-size: 3.5em;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    header .center {
+        width: 90%;
+    }
+}
+
+
+/*Top Nav*/
+#top-nav {
+    display: block;
+    background-color: $black;
+    height: 10vh;
+    
+    ul {
+        position: relative;
+        top: 50%;
+        transform: translate(0, -50%);
+    }
+}
+
+
+#body .nav-item .nav-link{
+    color: grey;
+    
+    .active{
+        color: $white;
+    }
+    
+    :hover{
+        background: #232426;
+        color: #fff;
+    }
+}
+    
+
+/*Responsive nav*/
+.menu_icon_cont {
+    display: none;
+    cursor: pointer;
+    width: 35px;
+    height: 39px;
+    margin: 10px 20px;
+    
+    .menu_icon_cont_inside {
+        float: right;
+    }
+}
+
+
+.bar1, .bar2, .bar3 {
+    width: 35px;
+    height: 5px;
+    background-color: #fff;
+    margin: 6px 0;
+    border-radius: 10px;
+}
+
+.open {
+    .bar1 {
+        transform: translate(0, 11px) rotate(-45deg);
+    }
+    
+    .bar2 {
+        transform: translate(0, 0) rotate(45deg);
+    }
+    
+    .bar3 {
+        transform: translate(0, -11px) rotate(45deg);
+    }
+} 
+
+
+#resp-nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100vh;
+    background-color: #060606;
+    z-index: 998;
+    transition: width 0.2s linear;
+    
+    ul, #resp-nav-icon {
+        display: none;
+    }
+    
+    ul {
+        list-style-type: none;
+        margin-top: 20px;
+        
+        li a{
+            padding: 10px;
+            width: fit-content;
+            white-space: nowrap;
+        }
+    }
+}
+
+#resp-nav.open {
+    display: block;
+    width: 100%;
+    
+    ul, #resp-nav-icon {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    #top-nav {
+        display: none;
+    }
+    
+    .menu_icon_cont {
+        display: inline-block;
+    }
+    
+    header {
+        height: 90vh;
+        
+        .center {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+    
+    
+    footer p, footer a {
+        font-size: $p_resp;
+    }
+}
+
+/*Footer*/
+footer {
+    background-color: $black;
+    text-align: center;
+    margin: 0;
+    padding: $padding_large 0;
+    
+    ul {
+        list-style-type: none;
+        width: fit-content;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+        padding: 0;
+        
+        li{
+            display: inline-block;
+            padding: 0 $padding;
+            
+            a {
+                color: $footer;
+                
+                :hover {
+                    color: $footer_hover;
+                }
+            }
+        }
+    }
+}
