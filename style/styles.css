@@ -29,7 +29,7 @@ body {
   position: fixed;
   bottom: 20px;
   right: 20px;
-  z-index: 999;
+  z-index: 998;
   background-color: #060606;
   color: #fff;
   display: none;
@@ -130,7 +130,7 @@ header .socials i :hover {
   width: 0%;
   height: 100vh;
   background-color: #060606;
-  z-index: 998;
+  z-index: 999;
   transition: width 0.2s linear;
 }
 #resp-nav ul, #resp-nav #resp-nav-icon {
