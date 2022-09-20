@@ -26,14 +26,21 @@ body {
     margin: 0;
 }
 
+#body .btn {
+    background-color: $purple;
+    color: $white;
+    
+    &:hover {
+        background-color: $l_purple;
+    }
+}
+
 /*Back to top btn*/
 #btn-back-to-top {
     position: fixed;
     bottom: 20px;
     right: 20px;
     z-index: 998;
-    background-color: $black;
-    color: $white;
     display: none;
 }
 

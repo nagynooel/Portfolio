@@ -24,14 +24,20 @@ body {
   margin: 0;
 }
 
+#body .btn {
+  background-color: #190E90;
+  color: #fff;
+}
+#body .btn:hover {
+  background-color: #4C4EF9;
+}
+
 /*Back to top btn*/
 #btn-back-to-top {
   position: fixed;
   bottom: 20px;
   right: 20px;
   z-index: 998;
-  background-color: #060606;
-  color: #fff;
   display: none;
 }
 

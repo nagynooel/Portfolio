@@ -26,16 +26,6 @@ Website: https://github.com/nagynooel
   padding: 10px 0 0 0;
 }
 
-/*Contact*/
-#body .contact_btn {
-  background-color: #190E90;
-  color: #fff;
-}
-#body .contact_btn :hover {
-  background-color: #4C4EF9;
-  color: #fff;
-}
-
 /*Responsive*/
 .resp_show {
   display: none;

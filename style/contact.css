@@ -16,13 +16,6 @@ Website: https://github.com/nagynooel
   box-shadow: none;
   border-bottom-color: #4C4EF9;
 }
-#contact #submit {
-  background-color: #190E90;
-  color: #fff;
-}
-#contact #submit:hover {
-  background-color: #4C4EF9;
-}
 #contact .left_col {
   position: relative;
   background-color: #D3D3D3;
@@ -38,8 +31,11 @@ Website: https://github.com/nagynooel
   font-size: 1.5rem;
   margin-right: 5px;
 }
-#contact .left_col .bl_cont a:hover i {
+#contact .left_col .bl_cont a i {
   color: #190E90;
+}
+#contact .left_col .bl_cont a:hover i {
+  color: #4C4EF9;
 }
 #contact .right_col {
   background-color: #F0F0F0;

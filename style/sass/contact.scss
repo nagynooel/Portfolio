@@ -21,15 +21,6 @@ Website: https://github.com/nagynooel
         }
     }
 
-    #submit {
-        background-color: $purple;
-        color: $white;
-        
-        &:hover {
-            background-color: $l_purple;
-        }
-    }
-    
     .left_col {
         position: relative;
         background-color: $grey;
@@ -45,8 +36,12 @@ Website: https://github.com/nagynooel
                 font-size: 1.5rem;
                 margin-right: 5px;
                 
-                &:hover i {
+                i {
                     color: $purple;
+                }
+                
+                &:hover i {
+                    color: $l_purple;
                 }
             }
         }
