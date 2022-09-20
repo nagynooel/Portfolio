@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Booptstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/4e6ee6e961.js" crossorigin="anonymous"></script>
+
+        <link href="../style/styles.css" rel="stylesheet">
+        <link href="../style/contact.css" rel="stylesheet">
+        
+        <title>Contact - Noel Nagy</title>
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    </head>
+    
+    <!--Id to body to override bootstrap properties-->
+    <body id="body">
+        
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <!--Success alert-->
+        <div class="alert alert-success alert-dismissible fade show" role="alert" id="email_sent_alert">
+            <span>E-mail successfully sent!</span>
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        
+        <nav id="top-nav">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="about.html">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="credits.html">Credits</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <header>
+            <!--"Sandwich" bar to open responsive menu-->
+            <div id="resp-nav-icon" class="menu_icon_cont" onclick="toggle_navbar(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            
+            <nav id="resp-nav">
+                <!--"Sandwich" bar to close responsive menu-->
+                <div id="resp-nav-icon" class="menu_icon_cont menu_icon_cont_inside open " onclick="toggle_navbar(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="about.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="credits.html">Credits</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="center">
+                <h1>Noel Nagy</h1>
+                <p class="sub_title">System Administrator Student</p>
+                <div class="socials">
+                    <a href="https://github.com/nagynooel" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/noel-nagy-768b24243/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="#contact"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </header>
+        
+        <section id="contact" class="container p-5">
+            <h3 class="text-center section_title">Let's get in touch!</h3>
+            <hr>
+            <div class="row main_row">
+                <div class="col-md-6 p-5 left_col">
+                    <h3 class="text-center">Have some questions?</h3>
+                    <p class="text-center"><strong>Found a bug?</strong></p>
+                    <p><strong>Feel free to contact me</strong> any time and I will try my best to give you a fast and satisfying reply!</p>
+                    <div class="bl_cont">
+                        <a href="https://github.com/nagynooel" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                        <a href="https://www.linkedin.com/in/noel-nagy-768b24243/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#contact"><i class="fa-regular fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-6 p-5 right_col">
+                    <h3 class="mb-3">Contact me</h3>
+                    <form id="contact-form">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <input type="text" name="name" class="form-control" placeholder="Name">
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="mb-3">
+                                    <input type="email" name="email" class="form-control" placeholder="E-mail">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3">
+                                <input type="text" name="subject" class="form-control" placeholder="Subject" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="mb-3">
+                                <textarea type="text" name="message" rows="3" class="form-control md-textarea" placeholder="Message"></textarea>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="text-left">
+                                <input type="button" value="Send" class="btn btn-lg my-3" id="submit" />
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <hr>
+        </section>
+        
+        <footer>
+            <p>Copyright &copy; 2022 Noel Nagy | All rights reserved</p>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </footer>
+
+        <script src="../js/navbar.js"></script>
+        <script src="../js/back-to-top.js"></script>
+        <script src="../js/contact.js"></script>
+    </body>
+    
+    </html>

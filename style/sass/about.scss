@@ -5,45 +5,7 @@ Author: Noel Nagy
 Website: https://github.com/nagynooel
 */
 
-@import "_variables.scss";
-
-/*Section*/
-section {
-    padding: 50px 0;
-    
-    .section_title, .section_subtitle {
-        text-align: center;
-        
-        ::before,  ::after{
-            content: " -- ";
-        }
-    }
-    
-    img {
-        width: 100%;
-    }
-    
-    .section_content p {
-        text-align: justify;
-        margin-bottom: $padding;
-        line-height: $line_height_large;
-    }
-    
-    i {
-        color: #060606;
-        font-size: 1.2em;
-        padding-right: 5px;
-    }
-    
-    .section_text {
-        text-align: center;
-        padding-top: 20px;
-    }
-}
-
-.section_dark {
-    background-color: $light;
-}
+@import "_variables";
 
 /*Skills*/
 

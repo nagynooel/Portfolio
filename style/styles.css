@@ -56,7 +56,7 @@ header .socials i {
   font-size: 2em;
   margin: 0 10px;
 }
-header .socials i :hover {
+header .socials i:hover {
   color: #060606;
 }
 
@@ -202,4 +202,36 @@ footer ul li a {
 }
 footer ul li a :hover {
   color: #3a3a3a;
+}
+
+/*Section*/
+section {
+  padding: 50px 0;
+}
+section .section_title, section .section_subtitle {
+  text-align: center;
+}
+section .section_title::before, section .section_title::after, section .section_subtitle::before, section .section_subtitle::after {
+  content: " -- ";
+}
+section img {
+  width: 100%;
+}
+section .section_content p {
+  text-align: justify;
+  margin-bottom: 10px;
+  line-height: 2em;
+}
+section i {
+  color: #060606;
+  font-size: 1.2em;
+  padding-right: 5px;
+}
+section .section_text {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.section_dark {
+  background-color: #F0F0F0;
 }/*# sourceMappingURL=styles.css.map */

@@ -1,0 +1,87 @@
+/*
+Package: portfolio
+File: stylesheet for contact.html
+Author: Noel Nagy
+Website: https://github.com/nagynooel
+*/
+
+@import "variables";
+
+#contact { 
+    input[type="text"], input[type="email"], textarea {
+        background: none;
+        border: none;
+        border-bottom: 1px solid $grey;
+        border-radius: 0;
+        
+        &:focus {
+            outline: none;
+            box-shadow: none;
+            border-bottom-color: $l_purple;
+        }
+    }
+
+    #submit {
+        background-color: $purple;
+        color: $white;
+        
+        &:hover {
+            background-color: $l_purple;
+        }
+    }
+    
+    .left_col {
+        position: relative;
+        background-color: $grey;
+        color: $black;
+        border-radius: 10px 0 0 10px;
+        
+        .bl_cont {
+            position: absolute;
+            bottom: 10px;
+            left: 50px;
+            
+            a {
+                font-size: 1.5rem;
+                margin-right: 5px;
+                
+                &:hover i {
+                    color: $purple;
+                }
+            }
+        }
+    }
+    
+    .right_col {
+        background-color: $light;
+        color: $white;
+        border-radius: 0 10px 10px 0;
+        color: $black;
+    }
+    
+    .main_row {
+        max-width: 60vw;
+        margin: auto;
+        border-radius: 10px;
+        box-shadow: 2px 2px $light;
+    }
+}
+
+.alert {
+    position: absolute;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    z-index: 999;
+    position: fixed;
+    display: none;
+    
+    span {
+        padding-right: 5px;
+    }
+    
+    button:focus {
+        outline: none;
+        box-shadow: none;
+    }
+}

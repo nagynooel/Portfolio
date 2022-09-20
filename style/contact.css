@@ -1,0 +1,72 @@
+/*
+Package: portfolio
+File: stylesheet for contact.html
+Author: Noel Nagy
+Website: https://github.com/nagynooel
+*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap");
+#contact input[type=text], #contact input[type=email], #contact textarea {
+  background: none;
+  border: none;
+  border-bottom: 1px solid #D3D3D3;
+  border-radius: 0;
+}
+#contact input[type=text]:focus, #contact input[type=email]:focus, #contact textarea:focus {
+  outline: none;
+  box-shadow: none;
+  border-bottom-color: #4C4EF9;
+}
+#contact #submit {
+  background-color: #190E90;
+  color: #fff;
+}
+#contact #submit:hover {
+  background-color: #4C4EF9;
+}
+#contact .left_col {
+  position: relative;
+  background-color: #D3D3D3;
+  color: #060606;
+  border-radius: 10px 0 0 10px;
+}
+#contact .left_col .bl_cont {
+  position: absolute;
+  bottom: 10px;
+  left: 50px;
+}
+#contact .left_col .bl_cont a {
+  font-size: 1.5rem;
+  margin-right: 5px;
+}
+#contact .left_col .bl_cont a:hover i {
+  color: #190E90;
+}
+#contact .right_col {
+  background-color: #F0F0F0;
+  color: #fff;
+  border-radius: 0 10px 10px 0;
+  color: #060606;
+}
+#contact .main_row {
+  max-width: 60vw;
+  margin: auto;
+  border-radius: 10px;
+  box-shadow: 2px 2px #F0F0F0;
+}
+
+.alert {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  z-index: 999;
+  position: fixed;
+  display: none;
+}
+.alert span {
+  padding-right: 5px;
+}
+.alert button:focus {
+  outline: none;
+  box-shadow: none;
+}/*# sourceMappingURL=contact.css.map */
