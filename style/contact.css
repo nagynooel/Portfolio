@@ -65,4 +65,21 @@ Website: https://github.com/nagynooel
 .alert button:focus {
   outline: none;
   box-shadow: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  #body #contact {
+    padding: 3rem 0;
+  }
+  #body .main_row {
+    max-width: 80vw !important;
+  }
+}
+@media only screen and (max-width: 767px) {
+  #contact .left_col {
+    border-radius: 10px 10px 0 0;
+  }
+  #contact .right_col {
+    border-radius: 0 0 10px 10px;
+  }
 }/*# sourceMappingURL=contact.css.map */

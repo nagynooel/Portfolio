@@ -97,18 +97,21 @@ header {
     }
 }
 
-#body .nav-item .nav-link{
-    color: grey;
+#body .nav-item {
+    .nav-link{
+        color: grey;
+        
+        :hover{
+            background: #232426;
+            color: #fff;
+        }
+    }
     
     .active{
         color: $white;
     }
-    
-    :hover{
-        background: #232426;
-        color: #fff;
-    }
 }
+
 
 /*Responsive nav*/
 .menu_icon_cont {

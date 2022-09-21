@@ -80,3 +80,27 @@ Website: https://github.com/nagynooel
         box-shadow: none;
     }
 }
+
+@media only screen and (max-width: 1000px) {
+    #body {
+        #contact {
+            padding: 3rem 0;
+        }
+        
+        .main_row {
+            max-width: 80vw !important;
+        }
+    }
+}
+
+@media only screen and (max-width: 767px) {
+    #contact {
+        .left_col {
+            border-radius: 10px 10px 0 0;
+        }
+        
+        .right_col {
+            border-radius: 0 0 10px 10px;
+        }
+    }
+}
