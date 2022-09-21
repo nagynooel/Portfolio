@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!--Booptstrap-->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+        <!--FontAwesome-->
+        <script src="https://kit.fontawesome.com/4e6ee6e961.js" crossorigin="anonymous"></script>
+
+        <link href="../style/styles.css" rel="stylesheet">
+        <link href="../style/credits.css" rel="stylesheet">
+        
+        <title>Credits - Noel Nagy</title>
+        <link rel="icon" type="image/x-icon" href="../img/favicon.ico">
+    </head>
+    
+    <!--Id to body to override bootstrap properties-->
+    <body id="body">
+        
+        <!-- Back to top button -->
+        <button type="button" class="btn btn-floating btn-lg" id="btn-back-to-top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <nav id="top-nav">
+            <ul class="nav justify-content-center">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html">About me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact me</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="credits.html">Credits</a>
+                </li>
+            </ul>
+        </nav>
+        
+        <header>
+            <!--"Sandwich" bar to open responsive menu-->
+            <div id="resp-nav-icon" class="menu_icon_cont" onclick="toggle_navbar(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            
+            <nav id="resp-nav">
+                <!--"Sandwich" bar to close responsive menu-->
+                <div id="resp-nav-icon" class="menu_icon_cont menu_icon_cont_inside open " onclick="toggle_navbar(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+                <ul>
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="credits.html">Credits</a>
+                    </li>
+                </ul>
+            </nav>
+            
+            <div class="center">
+                <h1>Noel Nagy</h1>
+                <p class="sub_title">System Administrator Student</p>
+                <div class="socials">
+                    <a href="https://github.com/nagynooel" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+                    <a href="https://www.linkedin.com/in/noel-nagy-768b24243/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="contact.html"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+        </header>
+        
+        <section class="container">
+            <h3 class="section_title">Credits</h3>
+            <p class="section_subtitle">This website would not be the same withouth them!</p>
+            <hr>
+            <div class="section_content">
+                <div class="row">
+                    <div class="col-md-6">
+                        <p>I would like to <strong>thank</strong> the following artists for <strong>creating the images on this website</strong>:</p>
+                        <ul>
+                            <li>
+                                <a href="https://www.flaticon.com/free-icon/programming_6062646" title="programming icons" target="_blank">Favicon created by juicy_fish - Flaticon</a>
+                            </li>
+                            <li>
+                                <a href="https://www.pexels.com/photo/close-up-photo-of-programming-of-codes-546819/" target="_blank">Header background created by luis gomes - Pexels</a>
+                            </li>
+                            <li>
+                                <a style="display: block; margin-bottom: 1rem;" href="https://www.freepik.com/author/vectorjuice" target="_blank">Vectors on about me and credits page created by vectorjuice - Freepik</a>
+                                <ul>
+                                    <li>
+                                        <a href="https://www.freepik.com/free-vector/relationship-marketing-abstract-concept_12085233.htm" target="_blank">Credits page - Attention vector</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.freepik.com/free-vector/developers-use-software-multiple-devices-cross-platform-software-multi-platform-platform-independent-software-concept_11667591.htm" target="_blank">About me page - Cross platform vector</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.freepik.com/free-vector/custom-style-script-website-optimization-coding-software-development-female-programmer-cartoon-character-working-adding-javascript-css-code_11669143.htm" target="_blank">About me page - Software Engeneering vector</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.freepik.com/free-vector/creative-content-writing-copywriting-blogging-internet-marketing-article-text-editing-publishing-online-documents-writer-editor-character-concept-illustration_11667214.htm" target="_blank">About me page - Text editing vector</a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.freepik.com/free-vector/web-developers-courses-computer-programming-web-design-script-coding-study-computer-science-student-learning-interface-structure-components_11669618.htm" target="_blank">About me page - Web styling vector</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <p>Make sure to <strong>check out their pages</strong>!</p>
+                    </div>
+                    <div class="col-md-6">
+                        <img src="../img/credits/attention.svg" alt="attention" title="Attention">
+                    </div>
+                </div>
+            </div>
+            <hr>
+        </section>
+        
+        <footer>
+            <p>Copyright &copy; 2022 Noel Nagy | All rights reserved</p>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="about.html">About me</a></li>
+                <li><a href="contact.html">Contact me</a></li>
+                <li><a href="credits.html">Credits</a></li>
+            </ul>
+        </footer>
+
+        <script src="../js/navbar.js"></script>
+        <script src="../js/back-to-top.js"></script>
+    </body>
+    
+    </html>
